@@ -13,7 +13,7 @@ The purpose of this repository is to provide an assignment that will highlight t
 
 - [General Information](#general-information)
 - [Assignment](#assignment)
-    - [Transformation and Migration to the Public Cloud](#transformation-and-migration-to-the-public-cloud)
+   - [Transformation and Migration to the Public Cloud](#transformation-and-migration-to-the-public-cloud)
 - [Deliverables](#deliverables)
 - [Links](#links)
 - [License](#license)
@@ -30,11 +30,11 @@ You will need to make a choice of delivering your solution in either **Amazon We
 
 ### Transformation and Migration to the Public Cloud
 
-You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting a customer facing web application on their on premise emnvironment based on a NodeJS application behind an NGINX reverse proxy. They are ustilizing a MongoDB cluster for storing data as well as an FTP server for document storage. They also maintain a cron server, mostly Bash and Python scripts, relevant to a small amount of jobs that need to be executed a few times per day (no more than once per hour). All the above services are hosted on several virtual machines.
+You have participated in a meeting with a client to assess their strategy to migrate to the public cloud. They are currently hosting a customer facing web application on their on premise environment based on a NodeJS application behind an NGINX reverse proxy. They are utilizing a MongoDB cluster for storing data as well as an FTP server for document storage. They also maintain a cron server, mostly Bash and Python scripts, relevant to a small number of jobs that need to be executed a few times per day (no more than once per hour). All the above services are hosted on several virtual machines.
 
-Finally, the customer currently has 3 environements, namely Test, Acceptance and Production.
+Finally, the customer currently has 3 environments, namely Test, Acceptance and Production.
 
-The customer is interested in migrating the complete envitonment to the Public Cloud. They are not in a rush, and they have given an indication that they want to go live on the Public Cloud 12 months after they have agreed on the vendor to support them in this journey. They want to make sure that they have enough time to adjust the application to any technology related changes originating from an infrastructure perspective.
+The customer is interested in migrating the complete environment to the Public Cloud. They are not in a rush, and they have given an indication that they want to go live on the Public Cloud 12 months after they have agreed on the vendor to support them in this journey. They want to make sure that they have enough time to adjust the application to any technology related changes originating from an infrastructure perspective.
 
 There is a hard requirement for exporting all application and infrastructure logs to an ElasticSearch Cluster. The customer needs to have access to the Kibana dashboard within their headquarters but the cluster/dashboard *should not* be publically accessible.
 
@@ -42,12 +42,12 @@ You have undertaken the task to design the future state of this environment in t
 * be scalable and flexible.
 * utilize managed services as much as possible.
 
-Cost optimization should be applied when necessarty, even if a few application related modifications are necessary. Environment isolation is important, but some shared services would be acceptable if they result in major cost reduction.
+Cost optimization should be applied when necessary, even if a few application related modifications are necessary. Environment isolation is important, but some shared services would be acceptable if they result in major cost reduction.
 
 ## Deliverables
 
 Please provide the following:
-1. An architectural design for all the components and all the environemnts.
+1. An architectural design for all the components and all the environments.
 2. An IaC project for deploying an MVP demo (excluding the CRON and the ElasticSearch requirements).
     * for AWS, write your IaC using: **AWS CDK**, or alternatively with AWS CloudFormation or Terraform.
     * for Azure, write your IaC using: **ARM Templates**, or alternatively with Terraform.
@@ -65,3 +65,4 @@ Please provide the following:
 ## License
 
 Copyright © 2019-2021, [Sentia](https://sentia.com). All rights reserved.
+
